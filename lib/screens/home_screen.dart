@@ -10,7 +10,6 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final List<String> _tasks = [];
-// hello 
   void _addNewTask(String task) {
     setState(() {
       _tasks.add(task);
@@ -69,8 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("To-Do List"),
-       centerTitle: true),
+      appBar: AppBar(title: Text("To-Do List"), centerTitle: true),
       body: ListView.builder(
         itemCount: _tasks.length,
         itemBuilder: (context, index) {
